@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import FeatureBox from '../components/feature-box'
 import Footer from '../components/footer'
 import ListMenu from '../data/menu'
+import { Fossil, Nuclear, Renewables } from '../imgs/icon'
 
 const Home: NextPage = () => {
   return (
@@ -39,16 +41,10 @@ const Home: NextPage = () => {
         </div>
         <div className='container mx-auto'>
         <div className='-mt-20'>
-          <div className='md:flex'>
-            <div className='md:w-1/3 p-6 rounded-l bg-slate-800 flex text-white'>
-              <div></div>
-              <div>
-                <div className='uppercase font-bold'>Fossil resources</div>
-                <div>
-                Leverage agile frameworks to provide a robust synopsis for high level overviews
-                </div>
-              </div>
-            </div>
+          <div className='md:grid grid-cols-3'>
+            <FeatureBox icon={<Fossil />} index={0} name='Fossil resources' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+            <FeatureBox icon={<Nuclear />} index={1} name='NUCLEAR ENERGY' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+            <FeatureBox icon={<Renewables />} index={2} name='RENEWABLES AND CCS' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
           </div>
         </div>
         </div>
