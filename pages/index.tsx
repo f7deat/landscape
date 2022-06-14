@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
+import AboutUs from '../components/about-us'
 import FeatureBox from '../components/feature-box'
 import Footer from '../components/footer'
 import ListMenu from '../data/menu'
 import { Fossil, Nuclear, Renewables } from '../imgs/icon'
+import logo from '../imgs/logo.svg';
 
 const Home: NextPage = () => {
   return (
@@ -20,9 +23,10 @@ const Home: NextPage = () => {
         <div className='first-box'>
           <div className='container mx-auto pb-20'>
             <div className='py-4 flex gap-4'>
+              <Image src={logo} alt="logo" />
               {
                 ListMenu.map(x => (
-                  <div className='px-4 py-6 uppercase font-medium' key={x.id}>{x.name}</div>
+                  <div className='px-4 py-6 uppercase font-medium text-gray-700' key={x.id}>{x.name}</div>
                 ))
               }
             </div>
@@ -34,7 +38,7 @@ const Home: NextPage = () => {
               </div>
               <div className='text-gray-600 mb-6' style={{maxWidth: 584}}>
                 We are working actively to reduce climate emissions, put a price on carbon, and benefits societis around the world.
-              </div>
+              </div> 
               <button className='px-10 py-4 bg-gray-100 rounded text-red-500' type='button'>Get to know us</button>
             </div>
           </div>
@@ -47,6 +51,7 @@ const Home: NextPage = () => {
             <FeatureBox icon={<Renewables />} index={2} name='RENEWABLES AND CCS' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
           </div>
         </div>
+        <AboutUs />
         </div>
       </main>
       <Footer />

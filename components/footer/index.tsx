@@ -7,9 +7,18 @@ const Footer : React.FC = () => {
 
                     </div>
                     <div className="md:w-1/3">
-                        
+                        <div className="py-3">
+                            
+                        </div>
+                        <div className="py-3">
+                            <i className="fas fa-envelope mr-2"></i>
+                            <a href="mailto:">info@defzone.net</a>
+                        </div>
                     </div>
                     <div className="md:w-1/3">
+
+                        <input type="text" className="px-4 py-2 rounded bg-slate-700 mb-4 w-72" placeholder="Your email address..." />
+
                         <div className="text-sm font-medium">Follow us</div>
                         <div className="flex py-4 gap-4">
                             <button className="h-8 w-8 rounded-full bg-white text-gray-900">

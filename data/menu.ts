@@ -8,6 +8,21 @@ const ListMenu = [
         id: 2,
         name: 'Service',
         url: '/service'
+    },
+    {
+        id: 3,
+        name: 'Project',
+        url: '/project'
+    },
+    {
+        id: 4,
+        name: 'About us',
+        url: '/about'
+    },
+    {
+        id: 5,
+        name: 'Conact us',
+        url: '/contact'
     }
 ]
 
