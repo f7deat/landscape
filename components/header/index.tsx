@@ -4,16 +4,18 @@ import Link from 'next/link'
 
 const Header: React.FC = () => {
     return (
-        <header className='container mx-auto'>
-            <div className='py-4 flex gap-4'>
+        <header className='container mx-auto px-4'>
+            <div className='py-4 flex gap-4 items-center'>
                 <Logo />
+                <div className='md:block hidden px-10'>
                 {
                     ListMenu.map(x => (
                         <Link key={x.id} href={x.url}>
-                            <a className='px-4 py-6 uppercase font-medium text-gray-700 hover:text-red-500'>{x.name}</a>
+                            <a className='px-4 py-6 uppercase font-medium text-gray-700 hover:text-pink-600'>{x.name}</a>
                         </Link>
                     ))
                 }
+                </div>
             </div>
         </header>
     )

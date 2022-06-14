@@ -14,7 +14,7 @@ const Contact: NextPage = () => {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
             </Head>
             <Header />
-            <main className="container mx-auto">
+            <main className="container mx-auto px-4">
                 <div className="font-semibold py-6" style={{fontSize: 30}}>Contact us</div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.8027198204068!2d147.3134858!3d-42.9824292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaa6dd9dda40e919b%3A0xc01f31b32dab72f7!2s58%20Hutchins%20St%2C%20Kingston%20TAS%207050%2C%20%C3%9Ac!5e0!3m2!1svi!2s!4v1655215440446!5m2!1svi!2s" width="100%" height="450" className="border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 <div className="mt-10">

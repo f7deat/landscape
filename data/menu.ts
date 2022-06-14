@@ -17,11 +17,11 @@ const ListMenu = [
     {
         id: 4,
         name: 'About us',
-        url: '/about'
+        url: '/contact'
     },
     {
         id: 5,
-        name: 'Conact us',
+        name: 'Contact us',
         url: '/contact'
     }
 ]

@@ -4,6 +4,7 @@ import AboutUs from '../components/about-us'
 import FeatureBox from '../components/feature-box'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import WhyChooseUs from '../components/why-choose-us'
 import { Fossil, Nuclear, Renewables } from '../imgs/icon'
 
 const Home: NextPage = () => {
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
       <main>
         <div className='first-box'>
         </div>
-        <div className='container mx-auto pb-20'>
+        <div className='container mx-auto pb-20 px-4'>
           <div className='py-20'>
             <div className='text-red-500'>We are DLiTi Landscape</div>
             <div style={{ fontSize: 72, letterSpacing: '-0.09em' }} className="font-semibold mb-2">
@@ -32,10 +33,12 @@ const Home: NextPage = () => {
             <div className='text-gray-600 mb-6' style={{ maxWidth: 584 }}>
               We are working actively to reduce climate emissions, put a price on carbon, and benefits societis around the world.
             </div>
-            <button className='px-10 py-4 bg-gray-100 rounded text-red-500' type='button'>Get to know us</button>
+            <div className='py-4'>
+              <a className='px-10 py-4 bg-gray-100 rounded text-red-500' href='https://www.facebook.com/DLiTiKingston'>Get to know us</a>
+            </div>
           </div>
         </div>
-        <div className='container mx-auto'>
+        <div className='container mx-auto mb-20'>
           <div>
             <div className='md:grid grid-cols-3'>
               <FeatureBox icon={<Fossil />} index={0} name='Fossil resources' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
@@ -45,6 +48,7 @@ const Home: NextPage = () => {
           </div>
           <AboutUs />
         </div>
+        <WhyChooseUs />
       </main>
       <Footer />
     </div>
