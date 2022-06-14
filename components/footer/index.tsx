@@ -7,12 +7,17 @@ const Footer : React.FC = () => {
 
                     </div>
                     <div className="md:w-1/3">
-                        <div className="py-3">
-                            
+                        <div className="py-2 text-gray-300">
+                            <i className="fas fa-map-marker-alt mr-2"></i>
+                            58 Hutchin Street, Kingston Hobart, TAS, Australia 7050
                         </div>
-                        <div className="py-3">
+                        <div className="py-2">
+                            <i className="fas fa-phone mr-2"></i>
+                            <a href="telto:+61 412 969 160" className="text-gray-300">+61 412 969 160</a>
+                        </div>
+                        <div className="py-2">
                             <i className="fas fa-envelope mr-2"></i>
-                            <a href="mailto:">info@defzone.net</a>
+                            <a href="mailto:dlititimberbuild@gmail.com" className="text-gray-300">dlititimberbuild@gmail.com</a>
                         </div>
                     </div>
                     <div className="md:w-1/3">

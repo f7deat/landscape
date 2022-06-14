@@ -9,4 +9,11 @@ body {
 .first-box {
     background: url('https://i.imgur.com/1JhkoBW.jpg') fixed center no-repeat;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
 }

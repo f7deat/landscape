@@ -1,12 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import AboutUs from '../components/about-us'
 import FeatureBox from '../components/feature-box'
 import Footer from '../components/footer'
-import ListMenu from '../data/menu'
+import Header from '../components/header'
 import { Fossil, Nuclear, Renewables } from '../imgs/icon'
-import logo from '../imgs/logo.svg';
 
 const Home: NextPage = () => {
   return (
@@ -19,39 +17,33 @@ const Home: NextPage = () => {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
       </Head>
 
+      <Header/>
+
       <main>
         <div className='first-box'>
-          <div className='container mx-auto pb-20'>
-            <div className='py-4 flex gap-4'>
-              <Image src={logo} alt="logo" />
-              {
-                ListMenu.map(x => (
-                  <div className='px-4 py-6 uppercase font-medium text-gray-700' key={x.id}>{x.name}</div>
-                ))
-              }
+        </div>
+        <div className='container mx-auto pb-20'>
+          <div className='py-20'>
+            <div className='text-red-500'>We are DLiTi Landscape</div>
+            <div style={{ fontSize: 72, letterSpacing: '-0.09em' }} className="font-semibold mb-2">
+              <div>We energize the lives of</div>
+              <div className='text-red-500'>170 million people every day</div>
             </div>
-            <div className='py-20'>
-              <div className='text-red-500'>We are DLiTi Landscape</div>
-              <div style={{ fontSize: 72, letterSpacing: '-0.09em' }} className="font-semibold mb-2">
-                <div>We energize the lives of</div>
-                <div className='text-red-500'>170 million people every day</div>
-              </div>
-              <div className='text-gray-600 mb-6' style={{maxWidth: 584}}>
-                We are working actively to reduce climate emissions, put a price on carbon, and benefits societis around the world.
-              </div> 
-              <button className='px-10 py-4 bg-gray-100 rounded text-red-500' type='button'>Get to know us</button>
+            <div className='text-gray-600 mb-6' style={{ maxWidth: 584 }}>
+              We are working actively to reduce climate emissions, put a price on carbon, and benefits societis around the world.
             </div>
+            <button className='px-10 py-4 bg-gray-100 rounded text-red-500' type='button'>Get to know us</button>
           </div>
         </div>
         <div className='container mx-auto'>
-        <div className='-mt-20'>
-          <div className='md:grid grid-cols-3'>
-            <FeatureBox icon={<Fossil />} index={0} name='Fossil resources' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
-            <FeatureBox icon={<Nuclear />} index={1} name='NUCLEAR ENERGY' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
-            <FeatureBox icon={<Renewables />} index={2} name='RENEWABLES AND CCS' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+          <div>
+            <div className='md:grid grid-cols-3'>
+              <FeatureBox icon={<Fossil />} index={0} name='Fossil resources' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+              <FeatureBox icon={<Nuclear />} index={1} name='NUCLEAR ENERGY' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+              <FeatureBox icon={<Renewables />} index={2} name='RENEWABLES AND CCS' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+            </div>
           </div>
-        </div>
-        <AboutUs />
+          <AboutUs />
         </div>
       </main>
       <Footer />
