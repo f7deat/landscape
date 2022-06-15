@@ -1,7 +1,31 @@
 import Link from "next/link"
+import { useEffect } from "react"
 import Logo from "../../imgs/logo"
 
-const Footer : React.FC = () => {
+declare var FB: any;
+
+const Footer: React.FC = () => {
+
+    useEffect(() => {
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox?.setAttribute("page_id", "1690401924365208");
+        chatbox?.setAttribute("attribution", "biz_inbox");
+        (window as any).fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v14.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            (js as any).src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode?.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, [])
+
     return (
         <footer className="bg-slate-800 text-white mt-20 pt-10">
             <div className="container mx-auto px-4">
@@ -9,12 +33,12 @@ const Footer : React.FC = () => {
                     <div className="md:w-1/3">
                         <div className="md:pr-10">
                             <div className="mb-6    ">
-                            <Logo />
+                                <Logo />
                             </div>
                             <div className="font-medium mb-4">
-                            DLiTi is present in more than 30 countries around the world, including several of the world’s most important oil and gas provinces. We operate in North and South America, Africa, Asia, Europe, Oceania.
+                                DLiTi is present in more than 30 countries around the world, including several of the world’s most important oil and gas provinces. We operate in North and South America, Africa, Asia, Europe, Oceania.
                             </div>
-                        <button className="w-full py-2 rounded bg-white text-pink-600">Explore offices worldwide</button>
+                            <button className="w-full py-2 rounded bg-white text-pink-600">Explore offices worldwide</button>
                         </div>
                     </div>
                     <div className="md:w-1/3">
@@ -54,7 +78,7 @@ const Footer : React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <hr/>
+                <hr />
                 <div className="md:flex jusitfy-between items-center text-sm">
                     <div className="py-4 flex-1">2022 DLiTi Landscape</div>
                     <div className="flex gap-4">
@@ -67,6 +91,15 @@ const Footer : React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            <div id="fb-root"></div>
+
+            <div id="fb-customer-chat" className="fb-customerchat">
+            </div>
+
+            <button className="h-16 w-16 fixed bottom-10 left-10 rounded-full flex items-center justify-center shadow-lg bg-white text-pink-600">
+                <i className="fas fa-bell fa-2x"></i>
+            </button>
         </footer>
     )
 }

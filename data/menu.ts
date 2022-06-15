@@ -6,22 +6,27 @@ const ListMenu = [
     },
     {
         id: 2,
-        name: 'Service',
-        url: '/service'
-    },
+        name: 'DECKING',
+        url: '/decking'
+    },  
     {
         id: 3,
-        name: 'Project',
-        url: '/project'
+        name: 'FENCINE',
+        url: '/fencine'
     },
     {
         id: 4,
-        name: 'About us',
-        url: '/contact'
+        name: 'GATE',
+        url: '/gate'
     },
     {
         id: 5,
-        name: 'Contact us',
+        name: 'Project',
+        url: 'https://www.facebook.com/DLiTiKingston/photos/'
+    },
+    {
+        id: 6,
+        name: 'About us',
         url: '/contact'
     }
 ]
