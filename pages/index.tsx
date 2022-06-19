@@ -1,7 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import AboutUs from '../components/about-us'
+import Annual from '../components/annual'
+import CommentBox from '../components/comment'
+import Exploration from '../components/exploration'
 import FeatureBox from '../components/feature-box'
+import Feedback from '../components/feedback'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import WhyChooseUs from '../components/why-choose-us'
@@ -49,6 +53,10 @@ const Home: NextPage = () => {
           <AboutUs />
         </div>
         <WhyChooseUs />
+        <Exploration />
+        <CommentBox />
+        <Annual />
+        <Feedback />
       </main>
       <Footer />
     </div>
