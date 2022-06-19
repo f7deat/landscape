@@ -34,16 +34,16 @@ const Home: NextPage = () => {
               We are working actively to reduce climate emissions, put a price on carbon, and benefits societis around the world.
             </div>
             <div className='py-4'>
-              <a className='px-10 py-4 bg-gray-100 rounded text-red-500' href='https://www.facebook.com/DLiTiKingston'>Get to know us</a>
+              <a className='px-10 py-4 bg-gray-100 rounded-lg font-bold hover:bg-slate-800 transition duration-500 text-primary shadow-lg' href='https://www.facebook.com/DLiTiKingston'>Get to know us</a>
             </div>
           </div>
         </div>
         <div className='container mx-auto mb-20'>
           <div>
             <div className='md:grid grid-cols-3'>
-              <FeatureBox icon={<Fossil />} index={0} name='Fossil resources' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
-              <FeatureBox icon={<Nuclear />} index={1} name='NUCLEAR ENERGY' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
-              <FeatureBox icon={<Renewables />} index={2} name='RENEWABLES AND CCS' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+              <FeatureBox icon={<Fossil />} index={0} name='Decking' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+              <FeatureBox icon={<Nuclear />} index={1} name='Fencine' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+              <FeatureBox icon={<Renewables />} index={2} name='Gate' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
             </div>
           </div>
           <AboutUs />

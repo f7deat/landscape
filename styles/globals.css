@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary: #db2777;
+    --body-color: #0E2240;
+    --light: #f1f5f9;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #0E2240;
+    color: var(--body-color);
 }
 
 .first-box {
-    background: url('https://i.imgur.com/1JhkoBW.jpg') fixed center no-repeat;
+    background-color: var(--light);
     background-size: cover;
     position: absolute;
     top: 0;
@@ -23,4 +29,8 @@ body {
     font-size: 48px;
     font-weight: 600;
     line-height: 65px;
+}
+
+.text-primary {
+    color: var(--primary);
 }

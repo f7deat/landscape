@@ -1,5 +1,6 @@
 import { NextPage } from "next"
 import Head from "next/head"
+import ContactForm from "../../components/contact-form"
 import Footer from "../../components/footer"
 import Header from "../../components/header"
 
@@ -23,11 +24,7 @@ const Contact: NextPage = () => {
                             <div className="mb-10">
                                 Please be as detailed as possible, stating all relevant information you already have, including any contacts, to help us understand your enquiry and help us find the right person to handle your request.
                             </div>
-                            <input type="text" className="px-4 py-2 border rounded mb-3 w-full" placeholder="Your Name" />
-                            <input type="text" className="px-4 py-2 border rounded mb-3 w-full" placeholder="Your E-mail" />
-                            <input type="text" className="px-4 py-2 border rounded mb-3 w-full" placeholder="Your Subject" />
-                            <textarea className="h-32 border rounded mb-3 w-full"></textarea>
-                            <button className="px-6 py-2 bg-slate-800 font-medium text-white rounded">Send message</button>
+                            <ContactForm />
                         </div>
                         <div className="md:w-1/3">
                             <div className="text-red-500 font-medium mb-4">CORPORATE HEADQUARTERS</div>
