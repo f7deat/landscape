@@ -1,14 +1,10 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import { Popover } from "react-tiny-popover";
 import Logo from "../../imgs/logo"
-import ContactForm from "../contact-form";
 
 declare var FB: any;
 
 const Footer: React.FC = () => {
-
-    const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
     useEffect(() => {
         var chatbox = document.getElementById('fb-customer-chat');
@@ -100,22 +96,6 @@ const Footer: React.FC = () => {
 
             <div id="fb-customer-chat" className="fb-customerchat">
             </div>
-
-            <Popover
-                isOpen={isPopoverOpen}
-                positions={['top', 'bottom', 'left', 'right']} // preferred positions by priority
-                content={
-                    <div className="bg-white p-6 rounded shadow-lg w-96 mx-4 z-50">
-                        <div className="font-bold mb-4 text-lg"><i className="fas fa-gift text-primary mr-2"></i> Get free quote</div>
-                        <ContactForm />
-                    </div>
-                }
-                onClickOutside={() => setIsPopoverOpen(false)}
-            >
-                <button className="get-free-quote h-16 w-16 fixed bottom-32 left-10 rounded-full flex items-center justify-center shadow-lg bg-white text-pink-600" onClick={() => setIsPopoverOpen(!isPopoverOpen)}>
-                    <i className="fas fa-bell fa-2x"></i>
-                </button>
-            </Popover>
 
             <a className="phone-call h-16 w-16 fixed bottom-10 left-10 rounded-full flex items-center justify-center shadow-lg bg-white text-pink-600" href="telto:+61 412 969 160">
                 <i className="fas fa-phone fa-2x"></i>

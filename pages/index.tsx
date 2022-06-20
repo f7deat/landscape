@@ -42,16 +42,16 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className='container mx-auto mb-20'>
-          <div>
+        <div className='bg-stone-100'>
+          <div className='container mx-auto'>
             <div className='md:grid grid-cols-3'>
               <FeatureBox icon={<Fossil />} index={0} name='Decking' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
               <FeatureBox icon={<Nuclear />} index={1} name='Fencine' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
               <FeatureBox icon={<Renewables />} index={2} name='Gate' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
             </div>
           </div>
-          <AboutUs />
         </div>
+        <AboutUs />
         <WhyChooseUs />
         <Exploration />
         <CommentBox />

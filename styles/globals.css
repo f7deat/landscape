@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --primary: #db2777;
+    --primary: #5cd85c;
     --body-color: #0E2240;
     --light: #f1f5f9;
 }
@@ -14,8 +14,6 @@ body {
 }
 
 .first-box {
-    background-color: var(--light);
-    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -37,5 +35,14 @@ body {
 
 .annual {
     background: url(https://i.imgur.com/yi64Om6.png) no-repeat fixed center;
+    background-size: cover;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.exploration {
+    background: url(https://sciw.com/wp-content/uploads/2014/12/Vinyl-Fence-Tuckerton-Spade-Caps-White.jpg) fixed no-repeat center;
     background-size: cover;
 }

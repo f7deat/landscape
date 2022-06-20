@@ -46,7 +46,7 @@ const Feedback: React.FC = () => {
                     <div className="grid grid-cols-2">
                         {
                             customers.map(x => (
-                                <div className="p-4 border-b flex items-center mb-2" key={x.id}>
+                                <div className="p-4 border-b flex items-center mb-2" key={x.id} data-aos="fade-up">
                                     <img src={x.logo} alt="logo" style={{maxWidth: 250}} />    
                                 </div>
                             ))
