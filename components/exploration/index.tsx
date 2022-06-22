@@ -6,7 +6,7 @@ const Exploration: React.FC = () => {
                     <div className="md:w-1/2" data-aos="fade-right">
                         <div className="bg-white p-10 shadow-lg rounded">
                             <div className="text-sm uppercase text-primary mb-3">Exploration</div>
-                            <div className="text-2xl font-bold mb-3">Meeting future demand for energy</div>
+                            <div className="text-2xl font-bold mb-3">Meeting future demand for design</div>
                             <div className="mb-3">
                                 Technology and innovation are enablers for our strategy. We are an energy company committed to long term value creation in a low carbon future.
                             </div>

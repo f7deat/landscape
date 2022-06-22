@@ -3,7 +3,7 @@ const Annual: React.FC = () => {
         <div className="annual">
             <div className="md:flex">
                 <div className="md:w-1/2"></div>
-                <div className="md:w-1/2 text-white md:p-40" style={{backgroundColor: '#0000009e'}}>
+                <div className="md:w-1/2 text-white md:p-40 p-4" style={{backgroundColor: '#0000009e'}}>
                     <div className="text-sm mb-2">STATISTICS</div>
                     <div className="title mb-4">Annual results</div>
                     <div className="border-b mb-4"></div>

@@ -1,6 +1,6 @@
 const AboutUs: React.FC = () => {
     return (
-        <div className="py-20 bg-stone-100">
+        <div className="py-20">
             <div className="container mx-auto">
                 <div className="md:flex">
                     <div className="md:w-1/2">

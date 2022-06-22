@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <div className='container mx-auto pb-20 px-4'>
           <div className='py-20'>
             <div className='text-red-500'>We are DLiTi Landscape</div>
-            <div style={{ fontSize: 72, letterSpacing: '-0.09em' }} className="font-semibold mb-2">
+            <div style={{ fontSize: 72, letterSpacing: '-0.09em' }} className="font-semibold mb-2 hidden md:block">
               <div>We energize the lives of</div>
               <div className='text-red-500'>170 million people every day</div>
             </div>
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className='bg-stone-100'>
+        <div>
           <div className='container mx-auto'>
             <div className='md:grid grid-cols-3'>
               <FeatureBox icon={<Fossil />} index={0} name='Decking' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />

@@ -37,7 +37,9 @@ const Header: React.FC = () => {
                             }
                             onClickOutside={() => setIsPopoverOpen(false)}
                         >
-                            <button className='px-10 py-3 rounded-full border font-medium border-green-500 text-green-500 font-bold uppercase transition duration-700 hover:bg-slate-800 focus:bg-slate-800' onClick={() => setIsPopoverOpen(!isPopoverOpen)}>Get free quote</button>
+                            <div className="item button-jittery md:block hidden" onClick={() => setIsPopoverOpen(!isPopoverOpen)}>
+                                <button className='px-10 py-3 rounded-full border border-green-500 border-2 uppercase text-green-500'>Get free quote</button>
+                            </div>
                         </Popover>
                         <div className="nav-but-wrap" onClick={() => toggleClass()}>
                             <div className="menu-icon hover-target">
