@@ -4,7 +4,7 @@ const AboutUs: React.FC = () => {
             <div className="container mx-auto">
                 <div className="md:flex">
                     <div className="md:w-1/2">
-                        <div className="h-96 w-full bg-gray-800" data-aos="zoom-out">
+                        <div className="h-96 w-full bg-gray-800" data-aos="zoom-in">
                             <img src="https://i.imgur.com/0o6oP9f.jpg" alt="img" className="w-full h-full object-fit-cover" />
                         </div>
                     </div>

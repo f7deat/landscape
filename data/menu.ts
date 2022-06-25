@@ -22,11 +22,11 @@ const ListMenu = [
     {
         id: 5,
         name: 'Project',
-        url: 'https://www.facebook.com/DLiTiKingston/photos/'
+        url: 'https://www.facebook.com/DLiTiKingston/'
     },
     {
         id: 6,
-        name: 'About us',
+        name: 'Contact us',
         url: '/contact'
     }
 ]

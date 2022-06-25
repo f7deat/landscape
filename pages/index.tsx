@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import AboutUs from '../components/about-us'
 import Annual from '../components/annual'
 import CommentBox from '../components/comment'
@@ -38,16 +39,18 @@ const Home: NextPage = () => {
               We are working actively to reduce climate emissions, put a price on carbon, and benefits societis around the world.
             </div>
             <div className='py-4'>
-              <a className='px-10 py-4 bg-gray-100 rounded-lg font-bold hover:bg-slate-800 transition duration-500 text-primary shadow-lg' href='https://www.facebook.com/DLiTiKingston'>Get to know us</a>
+              <Link href="/get-free-quote">
+                <a className='border-green-500 border uppercase px-10 py-4 bg-gray-100 rounded-lg font-bold hover:bg-slate-800 transition duration-500 text-primary shadow-lg'>Get free quote</a>
+              </Link>
             </div>
           </div>
         </div>
         <div>
           <div className='container mx-auto'>
             <div className='md:grid grid-cols-3'>
-              <FeatureBox icon={<Fossil />} index={0} name='Decking' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
-              <FeatureBox icon={<Nuclear />} index={1} name='Fencine' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
-              <FeatureBox icon={<Renewables />} index={2} name='Gate' description='Leverage agile frameworks to provide a robust synopsis for high level overviews' />
+              <FeatureBox icon={<Fossil />} index={0} name='Decking' description='Safety is always paramount, of course, especially when it comes to keeping the little ones' />
+              <FeatureBox icon={<Nuclear />} index={1} name='Fencine' description='Our qualified tradesmen will ensure your fence will not only do its job but look good, too' />
+              <FeatureBox icon={<Renewables />} index={2} name='Gate' description='Our decks, stairs and pergolas will transform any yard into a lavish and stylish area' />
             </div>
           </div>
         </div>

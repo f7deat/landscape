@@ -27,7 +27,7 @@ const WhyChooseUs: React.FC = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2 md:pr-20">
-                        <div className="md:flex justify-between py-6 px-4 md:px-0">
+                        <div className="md:flex justify-between py-4 md:px-0 gap-4">
                             <button className="px-10 w-full md:w-auto mb-2 py-4 rounded-lg bg-white shadow-lg text-slate-800 font-bold">OUR STRATEGY</button>
                             <button className="px-10 w-full md:w-auto mb-2 py-4 rounded-lg bg-slate-800 shadow-lg text-white font-bold">OUR VISION</button>
                             <button className="px-10 w-full md:w-auto mb-2 py-4 rounded-lg bg-slate-800 shadow-lg text-white font-bold">OUR MISSION</button>
