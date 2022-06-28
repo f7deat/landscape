@@ -1,4 +1,6 @@
+import { DatePicker, DatePickerProps, message } from "antd";
 import axios from "axios";
+import moment from "moment";
 import { useState } from "react"
 
 const ContactForm: React.FC = () => {
@@ -7,24 +9,24 @@ const ContactForm: React.FC = () => {
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
-    const [jobType, setJobType] = useState('');
-    const [appointment, setAppointment] = useState('');
+    const [jobType, setJobType] = useState('decking');
+    const [appointment, setAppointment] = useState<string | undefined>();
     const [description, setDescription] = useState('');
-    const [message, setMessage] = useState('');
     const [disabled, setDisabled] = useState(false)
 
     const handleSubmit = () => {
+
         if (!name) {
-            return setMessage('Please input name!')
+            return message.warning('Please input name!');
         }
         if (!phone) {
-            return setMessage('Please input phone!')
+            return message.warning('Please input phone!');
         }
         if (!email) {
-            return setMessage('Please input email!')
+            return message.warning('Please input email!');
         }
         if (!address) {
-            return setMessage('Please input address!')
+            return message.warning('Please input address!');
         }
 
         const metaData = {
@@ -46,7 +48,7 @@ const ContactForm: React.FC = () => {
 
         axios.post(`https://defzone.net/api/contact/add`, {
             data: {
-                name: name,
+                fullName: name,
                 phoneNumber: phone,
                 email: email,
                 address: address,
@@ -54,17 +56,27 @@ const ContactForm: React.FC = () => {
             }
         }).then(response => {
             if (response.data.succeeded) {
-                setMessage('Thank for submit. We are contact soon!')
-                setDisabled(true)
+                message.success('Thank for submit. We are contact soon!')
             } else {
-                setMessage('Error when trying submit!')
+                message.error(response.data.message)
             }
         })
     }
 
+    const onChange = (value: DatePickerProps['value']) => {
+        setAppointment(value?.format('YYYY-MM-DD hh:mm:ss'))
+    }
+
+    function disabledDate(currentDate: any) {
+        currentDate = moment(currentDate);
+        if (currentDate.day() === 0 || currentDate.day() === 6) {
+            return false;
+        }
+        return true;
+      }
+
     return (
         <div>
-            <div className="text-red-500 mb-3">{message}</div>
             <div className="mb-3">
                 <div className="font-bold mb-1">Name<span className="ml-1 text-red-500">*</span></div>
                 <input type="text" className="px-4 py-2 border rounded w-full" onChange={(e) => setName(e.target.value)} />
@@ -91,7 +103,9 @@ const ContactForm: React.FC = () => {
             </div>
             <div className="mb-3">
                 <div className="font-bold mb-1">Appointment</div>
-                <input type="datetime-local" className="px-4 py-2 rounded border w-full" onChange={(e) => setAppointment(e.target.value)} />
+                <DatePicker
+                disabledDate={disabledDate}
+                showTime className="w-full rounded border py-2 px-4" onChange={onChange} /> 
             </div>
             <div className="mb-3">
                 <div className="font-bold mb-1">Description</div>

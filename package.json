@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "antd": "^4.21.4",
     "aos": "^2.3.4",
     "axios": "^0.27.2",
     "next": "12.1.6",
