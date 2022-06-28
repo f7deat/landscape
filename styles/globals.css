@@ -50,3 +50,7 @@ body {
     background: url(https://sciw.com/wp-content/uploads/2014/12/Vinyl-Fence-Tuckerton-Spade-Caps-White.jpg) fixed no-repeat center;
     background-size: cover;
 }
+
+button, [type='button'], [type='reset'], [type='submit'] {
+    background-color: #1890ff;
+}
