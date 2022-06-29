@@ -32,8 +32,12 @@ const Footer: React.FC = () => {
                 <div className="md:flex gap-4 mb-6">
                     <div className="md:w-1/3 mb-4">
                         <div className="md:pr-10">
-                            <div className="mb-6    ">
-                                <Logo />
+                            <div className="mb-6">
+                                <Link href="/">
+                                    <a>
+                                        <Logo />
+                                    </a>
+                                </Link>
                             </div>
                             <div className="font-medium mb-4">
                                 DLiTi is present in more than 30 countries around the world, including several of the world’s most important oil and gas provinces. We operate in North and South America, Africa, Asia, Europe, Oceania.

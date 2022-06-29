@@ -110,22 +110,22 @@ const ContactForm: React.FC = () => {
                 <div className="mb-3">
                     <div className="font-bold mb-1">Job type</div>
                     <select className="px-4 py-2 border rounded w-full" onChange={(e) => setJobType(e.target.value)}>
-                        <option value="decking">Decking</option>
-                        <option value="fencing">Fencing</option>
-                        <option value="gate">Gate</option>
+                        <option value="Decking">Decking</option>
+                        <option value="Fencing">Fencing</option>
+                        <option value="Gate">Gate</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
                 <div className="mb-3">
                     <div className="font-bold mb-1">Appointment</div>
                     <DatePicker
-                        disabledDate={disabledDate}
                         showTime className="w-full rounded border py-2 px-4" onChange={onChange} />
                 </div>
                 <div className="mb-3">
                     <div className="font-bold mb-1">Description</div>
                     <textarea className="h-32 border rounded w-full px-4 py-2" onChange={(e) => setDescription(e.target.value)}></textarea>
                 </div>
-                <button className="px-6 py-2 bg-slate-800 font-medium text-white rounded" onClick={handleSubmit}>Submit</button>
+                <button className="px-6 py-2 bg-slate-800 font-bold text-white rounded hover:bg-slate-900" onClick={handleSubmit}><i className="far fa-paper-plane"></i> Submit</button>
             </div>
         </div>
     )

@@ -10,7 +10,6 @@ import Feedback from '../components/feedback'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import WhyChooseUs from '../components/why-choose-us'
-import { Fossil, Nuclear, Renewables } from '../imgs/icon'
 
 const Home: NextPage = () => {
   return (
@@ -48,9 +47,9 @@ const Home: NextPage = () => {
         <div>
           <div className='container mx-auto'>
             <div className='md:grid grid-cols-3'>
-              <FeatureBox icon={<Fossil />} index={0} name='Decking' description='Safety is always paramount, of course, especially when it comes to keeping the little ones' />
-              <FeatureBox icon={<Nuclear />} index={1} name='Fencine' description='Our qualified tradesmen will ensure your fence will not only do its job but look good, too' />
-              <FeatureBox icon={<Renewables />} index={2} name='Gate' description='Our decks, stairs and pergolas will transform any yard into a lavish and stylish area' />
+              <FeatureBox icon='fab fa-gitter' index={0} name='Decking' description='Safety is always paramount, of course, especially when it comes to keeping the little ones' />
+              <FeatureBox icon='fas fa-hashtag' index={1} name='Fencine' description='Our qualified tradesmen will ensure your fence will not only do its job but look good, too' />
+              <FeatureBox icon='fas fa-torii-gate' index={2} name='Gate' description='Our decks, stairs and pergolas will transform any yard into a lavish and stylish area' />
             </div>
           </div>
         </div>
