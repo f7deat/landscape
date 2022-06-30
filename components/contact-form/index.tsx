@@ -18,6 +18,11 @@ const ContactForm: React.FC = () => {
 
     const handleSubmit = () => {
 
+        const isSubmited = localStorage.getItem('def_is_submit')
+        if (isSubmited && isSubmited === 'already_submit') {
+            return message.error('You already submit form. We will contact you soon!');
+        }
+
         if (!name) {
             return message.warning('Please input name!');
         }
@@ -45,7 +50,8 @@ const ContactForm: React.FC = () => {
                     name: 'Description',
                     value: description
                 }
-            ]
+            ],
+            siteManager: 'dlititimberbuild@gmail.com'
         }
 
         axios.post(`https://defzone.net/api/contact/add`, {
@@ -57,6 +63,7 @@ const ContactForm: React.FC = () => {
         }).then(response => {
             if (response.data.succeeded) {
                 message.success('Thank for submit. We are contact soon!')
+                localStorage.setItem('def_is_submit', 'already_submit')
                 setShowThank(true)
             } else {
                 message.error(response.data.message)
