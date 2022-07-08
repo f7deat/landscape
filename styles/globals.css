@@ -12,6 +12,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: var(--body-color);
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 .first-box {

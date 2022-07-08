@@ -50,8 +50,7 @@ const ContactForm: React.FC = () => {
                     name: 'Description',
                     value: description
                 }
-            ],
-            siteManager: 'dlititimberbuild@gmail.com'
+            ]
         }
 
         axios.post(`https://defzone.net/api/contact/add`, {
@@ -59,7 +58,9 @@ const ContactForm: React.FC = () => {
             phoneNumber: phone,
             email: email,
             address: address,
-            metaData: JSON.stringify(metaData)
+            metaData: JSON.stringify(metaData),
+            managerEmail: 'dlititimberbuild@gmail.com',
+            chatId: '-751837231'
         }).then(response => {
             if (response.data.succeeded) {
                 message.success('Thank for submit. We are contact soon!')
