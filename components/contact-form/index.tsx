@@ -59,7 +59,7 @@ const ContactForm: React.FC = () => {
             email: email,
             address: address,
             metaData: JSON.stringify(metaData),
-            managerEmail: 'dlititimberbuild@gmail.com',
+            forwardTo: 'dlititimberbuild@gmail.com',
             chatId: '-751837231'
         }).then(response => {
             if (response.data.succeeded) {
