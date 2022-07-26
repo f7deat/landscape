@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type FeatureBoxProps = {
     name: string;
     description: string;
@@ -8,12 +10,16 @@ type FeatureBoxProps = {
 const FeatureBox: React.FC<FeatureBoxProps> = (props) => {
     return (
         <div>
-            <div className={`p-10 gap-4 flex items-center ${props.index !== 1 ? 'bg-slate-800 text-white' : 'bg-white text-pink-600'}`}>
+            <div className={`md:p-8 p-4 gap-6 flex items-center ${props.index !== 1 ? 'bg-slate-800 text-white' : 'bg-white text-pink-600'}`}>
                 <div>
-                    <i className={`${props.icon} fa-4x`}></i>
+                    <i className={`${props.icon} text-3xl`}></i>
                 </div>
                 <div>
-                    <div className='uppercase font-bold'>{props.name}</div>
+                    <div className="mb-2">
+                        <Link href="/service">
+                            <a className='uppercase font-bold'>{props.name}</a>
+                        </Link>
+                    </div>
                     <div>
                         {props.description}
                     </div>

@@ -36,12 +36,12 @@ const Feedback: React.FC = () => {
     ]
 
     return (
-        <div className="container py-10 mx-auto">
+        <div className="container py-10 mx-auto px-4 md:px-0">
             <div className="text-primary text-sm mb-4">CUSTOMERS</div>
             <div className="md:flex gap-10">
                 <div className="md:w-1/2 mb-10 px-4 md:px-0">
                     <div className="text-3xl font-bold mb-10">Feedback and clients:</div>
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 items-center">
                         <div className="w-96">
                             <img src="https://s3.amazonaws.com/brt.org/Jim-FarleyHeadshot-3-4.jpg" className="rounded-full" alt="ava" />
                         </div>

@@ -27,19 +27,19 @@ const Home: NextPage = () => {
       <main>
         <div className='first-box'>
         </div>
-        <div className='container mx-auto pb-20 px-4'>
-          <div className='py-20'>
-            <div className='text-red-500'>We are DLiTi Landscape</div>
-            <div style={{ fontSize: 72, letterSpacing: '-0.09em' }} className="font-semibold mb-2 hidden md:block">
+        <div className='container mx-auto md:pb-20 px-4'>
+          <div className='md:py-20 py-10'>
+            <div className='text-red-500 text-sm md:text-base'>We are DLiTi Landscape</div>
+            <div className="letter-a font-semibold mb-2">
               <div>We energize the lives of</div>
               <div className='text-red-500'>170 million people every day</div>
             </div>
-            <div className='text-gray-600 mb-6' style={{ maxWidth: 584 }}>
+            <div className='text-gray-600 mb-6 text-sm md:text-base' style={{ maxWidth: 584 }}>
               We are working actively to reduce climate emissions, put a price on carbon, and benefits societis around the world.
             </div>
-            <div className='py-4'>
+            <div className='py-4 text-center md:text-left'>
               <Link href="/get-free-quote">
-                <a className='border-green-500 border uppercase px-10 py-4 bg-gray-100 rounded-lg font-bold hover:bg-slate-800 transition duration-500 text-primary shadow-lg'>Get free quote</a>
+                <a className='border-green-500 border uppercase px-8 md:px-10 py-3 md:py-4 bg-gray-100 rounded-lg font-bold hover:bg-slate-800 transition duration-500 text-primary shadow-lg'>Get free quote</a>
               </Link>
             </div>
           </div>

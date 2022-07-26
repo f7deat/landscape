@@ -55,3 +55,41 @@ body {
 button, [type='button'], [type='reset'], [type='submit'] {
     background-color: #1890ff;
 }
+
+.logo {
+    width: 160px;
+}
+
+.btn-get-free-quote {
+    font-size: 12px;
+    padding: 0.5rem 1.5rem;
+}
+
+.letter-a {
+    font-size: 1.75rem;
+}
+
+.letter-b {
+    font-size: 1.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .logo {
+        width: auto;
+    }
+
+    .btn-get-free-quote {
+        padding: 0.75rem 3rem;
+        font-size: 1rem;
+    }
+
+    .letter-a {
+        font-size: 72px;
+        letter-spacing: -0.09em;
+    }
+
+    .letter-b {
+        font-size: 42px;
+    }
+}

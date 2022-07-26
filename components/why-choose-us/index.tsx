@@ -5,26 +5,20 @@ const WhyChooseUs: React.FC = () => {
                 <div className="md:flex">
                     <div className="md:w-1/2 md:pl-20">
                         <div className="text-pink-600 font-medium text-sm">OUR FEATURES</div>
-                        <div className="title mb-4">Why choose us</div>
+                        <div className="letter-b mb-4">Why choose us</div>
                         <div className="border-b mb-4"></div>
-                        <div className="flex gap-6 items-center" data-aos="fade-up">
-                            <i className="fas fa-4x fa-balance-scale text-gray-400"></i>
-                            <div className="p-10 md:mr-10">
-                                By 2022 we expect up to 25% of research funds to be devoted to new energy solutions energy efficiency
-                            </div>
-                        </div>
-                        <div className="flex gap-6 items-center" data-aos="fade-up">
-                            <i className="fas fa-4x fa-broadcast-tower text-gray-400"></i>
-                            <div className="p-10 md:mr-10">
-                                Aiming to achieve annual CO2 emission reductions of 3 million tonnes by 2030 compared to 2017.
-                            </div>
-                        </div>
-                        <div className="flex gap-6 items-center" data-aos="fade-up">
-                            <i className="fas fa-4x fa-bullhorn text-gray-400"></i>
-                            <div className="p-10 md:mr-10">
-                                By 2030 new energy has the potential to constitute around 15-20% of investments/annual capex
-                            </div>
-                        </div>
+                        <WhyChooseUsItem 
+                        icon="fas fa-balance-scale"
+                        description="By 2022 we expect up to 25% of research funds to be devoted to new energy solutions energy efficiency"
+                         />
+                        <WhyChooseUsItem 
+                        icon="fas fa-broadcast-tower"
+                        description="Aiming to achieve annual CO2 emission reductions of 3 million tonnes by 2030 compared to 2017."
+                         />
+                        <WhyChooseUsItem 
+                        icon="fas fa-bullhorn"
+                        description="By 2030 new energy has the potential to constitute around 15-20% of investments/annual capex"
+                         />
                     </div>
                     <div className="md:w-1/2 md:pr-20">
                         <div className="md:flex justify-between py-4 md:px-0 gap-4">
@@ -33,7 +27,7 @@ const WhyChooseUs: React.FC = () => {
                             <button className="px-10 w-full md:w-auto mb-2 py-4 rounded-lg bg-slate-800 shadow-lg text-white font-bold">OUR MISSION</button>
                         </div>
                         <div className="px-4 md:px-0">
-                            <div className="font-semibold pt-8 pb-4" style={{ fontSize: 32 }} data-aos="fade-up">Our strategy to create a beautiful house</div>
+                            <div className="font-semibold pt-8 pb-4 letter-b" data-aos="fade-up">Our strategy to create a beautiful house</div>
                             <div className="text-gray-700" data-aos="fade-up">
                                 Natural gas is an effective source of energy that can help limit CO2 emissions that cause global warming. Burning natural gas for power generation produces only around half the CO2 emissions compared to coal. Natural gas is mainly composed of methane, a potent greenhouse gas. Any leakages in the gas value chain will reduce the relative climate benefits of natural.
                                 <br /><br />
@@ -48,3 +42,19 @@ const WhyChooseUs: React.FC = () => {
 }
 
 export default WhyChooseUs
+
+type WhyChooseUsItemProps = {
+    icon: string;
+    description: string;
+}
+
+const WhyChooseUsItem: React.FC<WhyChooseUsItemProps> = (props) => {
+    return (
+        <div className="flex gap-6 items-center" data-aos="fade-up">
+            <i className={`${props.icon} text-gray-400 text-4xl`}></i>
+            <div className="md:p-10 p-4 md:mr-10">
+                {props.description}
+            </div>
+        </div>
+    )
+}

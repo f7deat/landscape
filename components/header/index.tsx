@@ -19,14 +19,14 @@ const Header: React.FC = () => {
     return (
         <div>
             <header className='container mx-auto px-4'>
-                <div className='py-4 flex flex-col md:flex-row gap-4 items-center justify-between'>
+                <div className='py-4 flex flex gap-4 items-center justify-between header'>
                     <Link href="/">
-                        <img src='https://i.imgur.com/rCxUGxB.png' alt="logo" className='cursor-pointer' />
+                        <img src='https://i.imgur.com/rCxUGxB.png' alt="logo" className='cursor-pointer logo' />
                     </Link>
                     <div className='flex items-center gap-10'>
                         <Link href="/get-free-quote">
                             <div className="item button-jittery">
-                                <button className='px-10 py-3 rounded-full bg-white border border-green-500 border-2 uppercase text-green-500'>Get free quote</button>
+                                <button className='btn-get-free-quote rounded-full bg-white border border-green-500 border-2 uppercase text-green-500'>Get free quote</button>
                             </div>
                         </Link>
                         <div className="nav-but-wrap md:block hidden" onClick={() => toggleClass()}>
