@@ -17,7 +17,7 @@ const GetFreeQuote: NextPage = () => {
             </Head>
             <Header />
             <div className="p-1 shadow"></div>
-            <main className="container mx-auto px-4 py-10">
+            <main className="container mx-auto px-4 py-6">
                 <div className="font-bold mb-6" style={{ fontSize: 35 }}>Get free quote</div>
                 <div className="md:flex gap-6">
                     <div className="md:w-1/2 mb-4">

@@ -10,7 +10,7 @@ const Exploration: React.FC = () => {
                             <div className="mb-3">
                                 Technology and innovation are enablers for our strategy. We are an energy company committed to long term value creation in a low carbon future.
                             </div>
-                            <button className="bg-gray-100 px-10 py-3 text-primary rounded">
+                            <button className="bg-gray-100 px-10 py-3 text-primary rounded hover:shadow-lg">
                                 <span className="mr-2">Explore more</span>
                                 <i className="fas fa-arrow-right"></i>
                             </button>

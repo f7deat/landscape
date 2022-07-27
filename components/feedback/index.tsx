@@ -43,7 +43,7 @@ const Feedback: React.FC = () => {
                     <div className="text-3xl font-bold mb-10">Feedback and clients:</div>
                     <div className="flex gap-4 items-center">
                         <div className="w-96">
-                            <img src="https://s3.amazonaws.com/brt.org/Jim-FarleyHeadshot-3-4.jpg" className="rounded-full" alt="ava" />
+                            <img src="https://i.pravatar.cc/300" className="rounded-full" alt="ava" />
                         </div>
                         <div className="md:text-xl text-sm md:p-10">
                         <div className="mb-4">

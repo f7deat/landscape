@@ -127,6 +127,7 @@ const ContactForm: React.FC = () => {
                 <div className="mb-3">
                     <div className="font-bold mb-1">Appointment</div>
                     <DatePicker
+                        disabledDate={disabledDate}
                         showTime className="w-full rounded border py-2 px-4" onChange={onChange} />
                 </div>
                 <div className="mb-3">
