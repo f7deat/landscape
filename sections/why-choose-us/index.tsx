@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SubTitle from "../../components/sub-title";
 import { TabItemProps } from "../../types/component";
 
 const WhyChooseUs: React.FC = () => {
@@ -34,7 +35,7 @@ const WhyChooseUs: React.FC = () => {
             <div className="container mx-auto py-20 px-4 md:px-0">
                 <div className="md:flex">
                     <div className="md:w-1/2 md:pl-20">
-                        <div className="text-pink-600 font-medium text-sm">OUR FEATURES</div>
+                        <SubTitle text="OUR FEATURES" />
                         <div className="letter-b mb-4">Why choose us</div>
                         <div className="border-b mb-4"></div>
                         <WhyChooseUsItem

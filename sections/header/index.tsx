@@ -26,7 +26,7 @@ const Header: React.FC = () => {
                     <div className='flex items-center gap-10'>
                         <Link href="/get-free-quote">
                             <div className="item button-jittery">
-                                <button className='btn-get-free-quote rounded-full bg-white border border-green-500 border-2 uppercase text-green-500'>Get free quote</button>
+                                <button className='btn-get-free-quote rounded-full bg-white border border-primary border-2 uppercase text-primary'>Get free quote</button>
                             </div>
                         </Link>
                         <div className="nav-but-wrap md:block hidden" onClick={() => toggleClass()}>

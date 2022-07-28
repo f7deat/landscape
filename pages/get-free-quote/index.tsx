@@ -1,9 +1,10 @@
 import { NextPage } from "next"
 import Head from "next/head"
-import ContactForm from "../../components/contact-form"
-import Footer from "../../components/footer"
-import Header from "../../components/header"
+import ContactForm from "../../sections/contact-form"
+import Footer from "../../sections/footer"
+import Header from "../../sections/header"
 import { NewSpapper } from "../../imgs/image"
+import SubTitle from "../../components/sub-title"
 
 const GetFreeQuote: NextPage = () => {
     return (
@@ -18,6 +19,7 @@ const GetFreeQuote: NextPage = () => {
             <Header />
             <div className="p-1 shadow"></div>
             <main className="container mx-auto px-4 py-6">
+                <SubTitle text="Subscribe" />
                 <div className="font-bold mb-6" style={{ fontSize: 35 }}>Get free quote</div>
                 <div className="md:flex gap-6">
                     <div className="md:w-1/2 mb-4">

@@ -1,15 +1,16 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import AboutUs from '../components/about-us'
-import Annual from '../components/annual'
-import CommentBox from '../components/comment'
-import Exploration from '../components/exploration'
-import FeatureBox from '../components/feature-box'
-import Feedback from '../components/feedback'
-import Footer from '../components/footer'
-import Header from '../components/header'
-import WhyChooseUs from '../components/why-choose-us'
+import SubTitle from '../components/sub-title'
+import AboutUs from '../sections/about-us'
+import Annual from '../sections/annual'
+import CommentBox from '../sections/comment'
+import Exploration from '../sections/exploration'
+import FeatureBox from '../sections/feature-box'
+import Feedback from '../sections/feedback'
+import Footer from '../sections/footer'
+import Header from '../sections/header'
+import WhyChooseUs from '../sections/why-choose-us'
 
 const Home: NextPage = () => {
   return (
@@ -29,17 +30,17 @@ const Home: NextPage = () => {
         </div>
         <div className='container mx-auto md:pb-20 px-4'>
           <div className='md:py-20 py-10'>
-            <div className='text-red-500 text-sm md:text-base'>We are DLiTi Landscape</div>
+            <SubTitle text='We are DLiTi Landscape' />
             <div className="letter-a font-semibold mb-2">
               <div>We energize the lives of</div>
-              <div className='text-red-500'>170 million people every day</div>
+              <div className='text-primary'>170 million people every day</div>
             </div>
             <div className='text-gray-600 mb-6 text-sm md:text-base' style={{ maxWidth: 584 }}>
               We are working actively to reduce climate emissions, put a price on carbon, and benefits societis around the world.
             </div>
             <div className='py-4 text-center md:text-left'>
               <Link href="/get-free-quote">
-                <a className='border-green-500 border uppercase px-8 md:px-10 py-3 md:py-4 bg-gray-100 rounded-lg font-bold hover:bg-slate-800 transition duration-500 text-primary shadow-lg'>Get free quote</a>
+                <a className='border-primary border uppercase px-8 md:px-10 py-3 md:py-4 bg-gray-100 rounded-lg font-bold hover:bg-slate-800 transition duration-500 text-primary shadow-lg'>Get free quote</a>
               </Link>
             </div>
           </div>

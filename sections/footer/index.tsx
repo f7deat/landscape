@@ -42,11 +42,11 @@ const Footer: React.FC = () => {
                             <div className="font-medium mb-4">
                                 DLiTi is present in more than 30 countries around the world, including several of the world’s most important oil and gas provinces. We operate in North and South America, Africa, Asia, Europe, Oceania.
                             </div>
-                            <button className="w-full py-2 rounded bg-white text-pink-600">Explore offices worldwide</button>
+                            <button className="w-full py-2 rounded bg-white text-primary">Explore offices worldwide</button>
                         </div>
                     </div>
                     <div className="md:w-1/3">
-                        <div className="mb-4 text-pink-600 font-bold">CORPORATE HEADQUARTERS</div>
+                        <div className="mb-4 text-primary font-bold">CORPORATE HEADQUARTERS</div>
                         <div className="py-2 text-gray-300">
                             <i className="fas fa-map-marker-alt mr-2"></i>
                             58 Hutchin Street, Kingston Hobart, TAS, Australia 7050
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
                     </div>
                     <div className="md:w-1/3">
 
-                        <div className="mb-4 text-pink-600 font-bold">SOCIAL & NEWSLETTER</div>
+                        <div className="mb-4 text-primary font-bold">SOCIAL & NEWSLETTER</div>
                         <input type="text" className="px-4 py-2 rounded bg-slate-700 mb-4 md:w-72 w-full" placeholder="Your email address..." />
 
                         <div className="text-sm font-medium">Follow us</div>

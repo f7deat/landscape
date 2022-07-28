@@ -1,3 +1,5 @@
+import SubTitle from "../../components/sub-title"
+
 const AboutUs: React.FC = () => {
     return (
         <div className="md:py-20 py-10">
@@ -9,7 +11,7 @@ const AboutUs: React.FC = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2 md:p-10 p-6">
-                        <div className="text-sm text-red-500">About us</div>
+                        <SubTitle text="About us" />
                         <div className="font-medium letter-b mb-4" data-aos="fade-up">Our products are essential to society</div>
                         <div className="text-gray-500" data-aos="fade-up">
                             Since 1972 we have been pushing the boundaries of imagination and technology, solving challenges in the oil and gas industry. That quest has taken us to greater depths, deeper waters and new frontiers.

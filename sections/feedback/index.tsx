@@ -1,3 +1,5 @@
+import SubTitle from "../../components/sub-title"
+
 const Feedback: React.FC = () => {
 
     const customers = [
@@ -37,7 +39,7 @@ const Feedback: React.FC = () => {
 
     return (
         <div className="container py-10 mx-auto px-4 md:px-0">
-            <div className="text-primary text-sm mb-4">CUSTOMERS</div>
+            <SubTitle text="CUSTOMERS" />
             <div className="md:flex gap-10">
                 <div className="md:w-1/2 mb-10 px-4 md:px-0">
                     <div className="text-3xl font-bold mb-10">Feedback and clients:</div>

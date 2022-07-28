@@ -10,7 +10,7 @@ type FeatureBoxProps = {
 const FeatureBox: React.FC<FeatureBoxProps> = (props) => {
     return (
         <div>
-            <div className={`md:p-8 p-4 gap-6 flex items-center ${props.index !== 1 ? 'bg-slate-800 text-white' : 'bg-white text-pink-600'}`}>
+            <div className={`md:p-8 p-4 gap-6 flex items-center ${props.index !== 1 ? 'bg-slate-800 text-white' : 'bg-slate-50 text-primary'}`}>
                 <div>
                     <i className={`${props.icon} text-3xl`}></i>
                 </div>

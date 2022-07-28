@@ -1,7 +1,8 @@
 import { NextPage } from "next"
 import Head from "next/head"
-import Footer from "../../components/footer"
-import Header from "../../components/header"
+import SubTitle from "../../components/sub-title"
+import Footer from "../../sections/footer"
+import Header from "../../sections/header"
 
 const Service: NextPage = () => {
     const data = [
@@ -29,7 +30,11 @@ const Service: NextPage = () => {
             </Head>
             <Header />
             <main className="container mx-auto px-4 py-10">
-                <div className="font-bold mb-6" style={{ fontSize: 35 }}>Service</div>
+                <SubTitle text="service" />
+                <div className="font-bold mb-2" style={{ fontSize: 35 }}>We deliver to energise the live of 170+ million people</div>
+                <div className="text-gray-500 mb-6">
+                Our industry is experiencing fundamental challenges. From climate change and geopolitics to the energy markets, we are facing new realities. Some see them as threats. In Textron, we believe our job is to turn them into opportunities. That’s why we’re looking for new ways to utilise our expertise in the energy industry, exploring opportunities in new energy as well as driving innovation in oil and gas around the world. We know that the future has to be low carbon. Our ambition is to be the world’s most carbon-efficient oil and gas producer, as well as driving innovation in renewables. 
+                </div>
                 <div className="md:grid grid-cols-4 gap-10">
                     {
                         data.map(x => (

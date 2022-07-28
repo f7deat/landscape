@@ -1,8 +1,7 @@
 import { NextPage } from "next"
 import Head from "next/head"
-import ContactForm from "../../components/contact-form"
-import Footer from "../../components/footer"
-import Header from "../../components/header"
+import Footer from "../../sections/footer"
+import Header from "../../sections/header"
 
 const Contact: NextPage = () => {
     return (

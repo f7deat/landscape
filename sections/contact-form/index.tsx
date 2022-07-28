@@ -87,8 +87,8 @@ const ContactForm: React.FC = () => {
     return (
         <div>
             <div hidden={!showThank}>
-                <div className="p-6 rounded border border-green-500 bg-green-100 mb-4">
-                    <div className="text-2xl font-bold text-green-500">
+                <div className="p-6 rounded border border-primary bg-green-100 mb-4">
+                    <div className="text-2xl font-bold text-primary">
                         Thank for submit. We will contact you soon!
                     </div>
                 </div>

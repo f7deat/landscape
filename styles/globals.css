@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --primary: #5cd85c;
+    --primary: #B5038D;
     --body-color: #0E2240;
     --light: #f1f5f9;
 }
@@ -36,6 +36,10 @@ body {
 
 .text-primary {
     color: var(--primary);
+}
+
+.border-primary {
+    border-color: var(--primary);
 }
 
 .annual {
